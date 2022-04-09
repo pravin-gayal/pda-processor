@@ -1,0 +1,62 @@
+{
+  "ID": 2,
+  "name": "(01)*",
+  "states": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+  ],
+  "input_alphabet": [
+    "0",
+    "1"
+  ],
+  "stack_alphabet": [
+    "0",
+    "1"
+  ],
+  "accepting_states": [
+    "q1",
+    "q5"
+  ],
+  "start_state": "q1",
+  "transitions": [
+    [
+      "q1",
+      null,
+      null,
+      "q2",
+      "$"
+    ],
+    [
+      "q2",
+      "0",
+      null,
+      "q3",
+      "0"
+    ],
+    [
+      "q3",
+      "1",
+      "0",
+      "q4",
+      null
+    ],
+    [
+      "q4",
+      "0",
+      null,
+      "q3",
+      "0"
+    ],
+    [
+      "q4",
+      null,
+      "$",
+      "q5",
+      null
+    ]
+  ],
+  "eos": "$"
+}

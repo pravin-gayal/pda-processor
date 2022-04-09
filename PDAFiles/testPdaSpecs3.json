@@ -1,0 +1,61 @@
+{
+  "ID": 3,
+  "name": "cat^n dog^n",
+  "states": [
+    "q1",
+    "q2",
+    "q3",
+    "q4"
+  ],
+  "input_alphabet": [
+    "cat",
+    "dog"
+  ],
+  "stack_alphabet": [
+    "cat",
+    "dog"
+  ],
+  "accepting_states": [
+    "q1",
+    "q4"
+  ],
+  "start_state": "q1",
+  "transitions": [
+    [
+      "q1",
+      null,
+      null,
+      "q2",
+      "$"
+    ],
+    [
+      "q2",
+      "cat",
+      null,
+      "q2",
+      "cat"
+    ],
+    [
+      "q2",
+      "dog",
+      "cat",
+      "q3",
+      null
+    ],
+    [
+      "q3",
+      "dog",
+      "cat",
+      "q3",
+      null
+    ],
+    [
+      "q3",
+      null,
+      "$",
+      "q4",
+      null
+    ]
+  ],
+  "eos": "$"
+}
